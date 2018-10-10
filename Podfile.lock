@@ -1,0 +1,16 @@
+PODS:
+  - AMScrollingNavbar (5.0.4)
+
+DEPENDENCIES:
+  - AMScrollingNavbar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMScrollingNavbar
+
+SPEC CHECKSUMS:
+  AMScrollingNavbar: ec41cb1552e855cc14eb24826b7ea3b15dfd3499
+
+PODFILE CHECKSUM: 859d19b3045142b44559c25ad52d841acc84d06b
+
+COCOAPODS: 1.5.3

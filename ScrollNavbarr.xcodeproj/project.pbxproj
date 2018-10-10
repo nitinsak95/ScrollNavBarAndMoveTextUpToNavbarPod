@@ -12,9 +12,15 @@
 		A4594B6B2154CF64000500DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4594B692154CF64000500DF /* Main.storyboard */; };
 		A4594B6D2154CF64000500DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4594B6C2154CF64000500DF /* Assets.xcassets */; };
 		A4594B702154CF64000500DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4594B6E2154CF64000500DF /* LaunchScreen.storyboard */; };
+		A4594B782154D0C5000500DF /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4594B772154D0C5000500DF /* Cell.swift */; };
+		A4594B7A2154F583000500DF /* LargeTitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4594B792154F583000500DF /* LargeTitleVC.swift */; };
+		EF09861EF018CFC3DDE78D22 /* Pods_ScrollNavbarr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F1E8C7D5C879C03517563 /* Pods_ScrollNavbarr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		382F763F3AE825274C25FB3F /* Pods-ScrollNavbarr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollNavbarr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollNavbarr/Pods-ScrollNavbarr.release.xcconfig"; sourceTree = "<group>"; };
+		668F1E8C7D5C879C03517563 /* Pods_ScrollNavbarr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollNavbarr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BB95256AD7EEBF596E8E6B /* Pods-ScrollNavbarr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollNavbarr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollNavbarr/Pods-ScrollNavbarr.debug.xcconfig"; sourceTree = "<group>"; };
 		A4594B622154CF64000500DF /* ScrollNavbarr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollNavbarr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4594B652154CF64000500DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4594B672154CF64000500DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		A4594B6C2154CF64000500DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4594B6F2154CF64000500DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4594B712154CF65000500DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4594B772154D0C5000500DF /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		A4594B792154F583000500DF /* LargeTitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF09861EF018CFC3DDE78D22 /* Pods_ScrollNavbarr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13890FAA3545BB4C86616B68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB95256AD7EEBF596E8E6B /* Pods-ScrollNavbarr.debug.xcconfig */,
+				382F763F3AE825274C25FB3F /* Pods-ScrollNavbarr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4594B592154CF64000500DF = {
 			isa = PBXGroup;
 			children = (
 				A4594B642154CF64000500DF /* ScrollNavbarr */,
 				A4594B632154CF64000500DF /* Products */,
+				13890FAA3545BB4C86616B68 /* Pods */,
+				D38F73E0540BA2CCF80F9F1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +80,18 @@
 				A4594B6C2154CF64000500DF /* Assets.xcassets */,
 				A4594B6E2154CF64000500DF /* LaunchScreen.storyboard */,
 				A4594B712154CF65000500DF /* Info.plist */,
+				A4594B772154D0C5000500DF /* Cell.swift */,
+				A4594B792154F583000500DF /* LargeTitleVC.swift */,
 			);
 			path = ScrollNavbarr;
+			sourceTree = "<group>";
+		};
+		D38F73E0540BA2CCF80F9F1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				668F1E8C7D5C879C03517563 /* Pods_ScrollNavbarr.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4594B742154CF65000500DF /* Build configuration list for PBXNativeTarget "ScrollNavbarr" */;
 			buildPhases = (
+				44892C76F4B08D086ABC7969 /* [CP] Check Pods Manifest.lock */,
 				A4594B5E2154CF64000500DF /* Sources */,
 				A4594B5F2154CF64000500DF /* Frameworks */,
 				A4594B602154CF64000500DF /* Resources */,
+				D5B3EA68BA3E3056B20A9033 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +163,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44892C76F4B08D086ABC7969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollNavbarr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B3EA68BA3E3056B20A9033 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollNavbarr/Pods-ScrollNavbarr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollNavbarr/Pods-ScrollNavbarr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4594B5E2154CF64000500DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +209,8 @@
 			files = (
 				A4594B682154CF64000500DF /* ViewController.swift in Sources */,
 				A4594B662154CF64000500DF /* AppDelegate.swift in Sources */,
+				A4594B782154D0C5000500DF /* Cell.swift in Sources */,
+				A4594B7A2154F583000500DF /* LargeTitleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +345,7 @@
 		};
 		A4594B752154CF65000500DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BB95256AD7EEBF596E8E6B /* Pods-ScrollNavbarr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +361,7 @@
 		};
 		A4594B762154CF65000500DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382F763F3AE825274C25FB3F /* Pods-ScrollNavbarr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
